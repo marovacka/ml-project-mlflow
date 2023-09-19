@@ -1,0 +1,8 @@
+{
+    "project_dir": "my_project",
+    "project_name": "My Project",
+    "INGEST_DATA_LOCATION": "INGEST_DATA_LOCATION",
+    "INGEST_CONFIG": "INGEST_CONFIG",
+    "INGEST_SCORING_CONFIG": "INGEST_SCORING_CONFIG",
+    "PREDICT_OUTPUT_CONFIG": "PREDICT_OUTPUT_CONFIG"
+}

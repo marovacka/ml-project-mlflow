@@ -1,0 +1,13 @@
+name: {{cookiecutter.project_dir}}
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytest=7.4.0
+  - codecov=2.1.13
+  - mlflow=2.5.0  
+  - pip:
+      - azureml-mlflow==1.52.0
+variables:
+    

@@ -19,4 +19,10 @@ and activate it by
 `conda activate {{cookiecutter.project_dir}}`
 
 Install your conda environment using ipykernel to be able to set correct kernel in jupyter notebook
+
 `python -m ipykernel install --user --name={{cookiecutter.project_dir}}`
+
+Install all packages of the project into environment.
+
+`pip install .`
+

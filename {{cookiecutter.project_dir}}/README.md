@@ -26,3 +26,12 @@ Install all packages of the project into environment.
 
 `pip install .`
 
+Install `make` for Windows operating system, for example using Chocolatey package manager. You can download `.msi` installation file from
+`https://github.com/chocolatey/choco/releases/`
+
+Then install `make`
+
+`choco install make`
+
+https://github.com/mlflow/mlflow/issues/6201
+

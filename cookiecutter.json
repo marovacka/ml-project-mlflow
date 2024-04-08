@@ -1,4 +1,7 @@
 {
     "project_dir": "my_project",
-    "project_name": "My Project"    
+    "project_name": "My Project",
+    "_copy_without_render": [
+        "recipe.yaml"
+    ]
 }

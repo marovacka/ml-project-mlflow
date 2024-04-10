@@ -4,10 +4,10 @@ This module defines the following routines used by the 'ingest' step:
 - ``load_file_as_dataframe``: Defines customizable logic for parsing dataset formats that are not
   natively parsed by MLflow Recipes (i.e. formats other than Parquet, Delta, and Spark SQL).
 """
-from pandas import DataFrame
+import pandas as pd
 
 
-def load_file_as_dataframe(location: str) -> DataFrame:
+def load_file_as_dataframe(location: str, extension: str) -> pd.DataFrame:
     """
     Load content from the specified dataset file as a Pandas DataFrame.
 
@@ -21,4 +21,6 @@ def load_file_as_dataframe(location: str) -> DataFrame:
     """
     # FIXME::OPTIONAL: implement the handling of non-natively supported file_format.
 
-    raise NotImplementedError
+    mnist_df = pd.read_csv(location)
+
+    return mnist_df

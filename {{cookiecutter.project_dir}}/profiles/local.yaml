@@ -16,7 +16,7 @@ experiment:
 
 INGEST_CONFIG:
   using: "csv"
-  location: "./data/df.csv"
+  location: "./data/mnist.csv"
   loader_method: load_file_as_dataframe
   #
   # FIXME::REQUIRED: Specify the format of the training and evaluation dataset. Natively supported

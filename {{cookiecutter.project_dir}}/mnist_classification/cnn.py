@@ -61,4 +61,6 @@ class Mnist_Cnn_Classifier(BaseEstimator):
         # For simplicity, let's assume it predicts class 0 for all instances
         input_features = X[INPUT_FEATURES].values
         input_features = input_features.reshape((input_features.shape[0], PICTURE_SIZE, PICTURE_SIZE)).astype('float32')
-        return self._model.predict(input_features)
+        prediction = self._model.predict(input_features)
+        prediction = tf.argmax(prediction, axis=1)
+        return prediction

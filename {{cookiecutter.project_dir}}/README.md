@@ -38,7 +38,14 @@ Then run cmd in administrator mode and install `make`
 
 `choco install make`
 
+After all instalation steps, you can run `./main.py` script to see whether your package `{{cookiecutter.project_name}}` is installed properly
+
+`python main.py`
+
+you should see message 
+
+`hello `{{cookiecutter.project_name}}`
+
 Run jupyter notebook `./notebooks/wine_classification_recipe.ipynb` to experiment with example recipe. The recipe contains all necesarry steps to train model for wine classification task.
 
-Feel free to create your own project recipe in the directory `recipes/{{cookiecutter.project_name}}`.
-Please notice that the directory `{{cookiecutter.project_name}}` is meant to be directory for the project package.
+Feel free to create your own project recipe in a subdirectory inside `recipes/{{cookiecutter.project_name}}`.

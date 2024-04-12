@@ -7,11 +7,5 @@ dependencies:
   - pip
   - pytest=7.4.0  
   - mlflow=2.5.0
-  - ipykernel=6.28.0
-  - cudatoolkit=11.2
-  - cudnn=8.1.0
-  - cudatoolkit-dev
-  - pip:
-    - tensorflow==2.10
-
+  - ipykernel=6.28.0 
     

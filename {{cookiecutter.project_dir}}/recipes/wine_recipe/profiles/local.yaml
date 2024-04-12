@@ -1,7 +1,7 @@
 experiment:
   name: "sklearn_classification_experiment"
-  tracking_uri: "sqlite:///metadata/mlflow/mlruns.db"
-  artifact_location: "./metadata/mlflow/mlartifacts"
+  tracking_uri: "sqlite:///../metadata/mlflow/mlruns.db"
+  artifact_location: "../metadata/mlflow/mlartifacts"
 
 # Set the registry server URI. This property is especially useful if you have a registry
 # server that’s different from the tracking server.
@@ -17,7 +17,7 @@ SPLIT_RATIOS: [0.80, 0.10, 0.10]
 INGEST_CONFIG:
   # For different options please read: https://github.com/mlflow/recipes-classification-template#ingest-step
   using: csv
-  location: ["./data/winequality-white.csv", "./data/winequality-red.csv"]
+  location: ["../../data/winequality-white.csv", "../../data/winequality-red.csv"]
   loader_method: load_file_as_dataframe
 
 INGEST_SCORING_CONFIG:

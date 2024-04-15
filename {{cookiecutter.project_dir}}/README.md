@@ -5,13 +5,11 @@ Machine Learning project generated using Cookiecutter.
 Getting started
 ---------------
 
-It is needed to create conda virtual environment for this project. It is  recommeded to install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+It is needed to create conda virtual environment for this project. It is  recommeded to install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) package manager.
 
 Use following command to create environment
 
 `conda env create -f environment.yml`
-
-#` conda create -y --name={{cookiecutter.project_dir}} python=3.10 `
 
 
 and activate it by
@@ -34,7 +32,7 @@ Run the following in your command line
 Install `make` if it isn't installed on your OS, for example using Chocolatey package manager. You can download `.msi` installation file from
 `https://github.com/chocolatey/choco/releases/`
 
-Then run cmd in administrator mode and install `make`
+Run cmd in administrator mode and install `make`
 
 `choco install make`
 
@@ -42,10 +40,11 @@ After all instalation steps, you can run `./main.py` script to see whether your 
 
 `python main.py`
 
-you should see message 
+you should see the following message 
 
 `hello {{cookiecutter.project_dir}}`
 
 Run jupyter notebook `./notebooks/wine_classification_recipe.ipynb` to experiment with example recipe. The recipe contains all necesarry steps to train model for wine classification task.
+Don't forget to set python kernel `{{cookiecutter.project_dir}}` in open notebook.
 
 Feel free to create your own project recipe in a subdirectory inside `recipes/{{cookiecutter.project_dir}}`.

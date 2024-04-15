@@ -36,9 +36,9 @@ Run cmd in administrator mode and install `make`
 
 `choco install make`
 
-After all instalation steps, you can run `./main.py` script to see whether your package `{{cookiecutter.project_dir}}` is installed properly
+After all instalation steps, you can run `{{cookiecutter.project_dir}}/main.py` script to see whether your package `{{cookiecutter.project_dir}}` is installed properly
 
-`python main.py`
+`python {{cookiecutter.project_dir}}/main.py`
 
 you should see the following message 
 

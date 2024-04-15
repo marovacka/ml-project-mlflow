@@ -15,6 +15,6 @@ Or you can clone repository first
 
 `git clone https://github.com/marovacka/ml-project-mlflow.git`
 
-and create template from directory `{{cookiecutter.project_dir}}` of the local clone using following comand
+and create template from directory `{{cookiecutter.project_dir}}` of the local clone using following command
 
 `python.exe -m cookiecutter -o <destination_path> ../`

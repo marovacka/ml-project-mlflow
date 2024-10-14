@@ -44,7 +44,13 @@ you should see the following message
 
 `hello {{cookiecutter.project_dir}}`
 
-Run jupyter notebook `./notebooks/wine_classification_recipe.ipynb` to experiment with example recipe. The recipe contains all necesarry steps to train model for wine classification task.
-Don't forget to set python kernel `{{cookiecutter.project_dir}}` in open notebook.
+Run the jupyter notebook `./notebooks/wine_classification_recipe.ipynb` to experiment with example recipe. The recipe contains all necesarry steps to train model for wine classification task.
+To see how to search jobs in experiment and make an inference open the notebook `./notebooks/wine_classification_inference.ipynb`
+
+For running the noteebok with model inference start mlflow server with following command
+
+`set MLFLOW_TRACKING_URI=sqlite:///recipes/metadata/mlflow/mlruns.db && mlflow models serve --env-manager local  -m runs:/<run_id>/train/model -p 5001`
+
+Don't forget to set python kernel `{{cookiecutter.project_dir}}` in open notebooks.
 
 Feel free to create your own project recipe in a subdirectory inside `recipes/{{cookiecutter.project_dir}}`.
